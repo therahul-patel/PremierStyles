@@ -1,0 +1,534 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  background-color: #f8f8f8;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  padding-top: 0.1px;
+}
+
+#nav {
+  height: 10vh;
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 40px;
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav h3 {
+  display: none;
+}
+
+#nav h1 {
+  /* background-color: rgb(203, 137, 160); */
+  font-family: monument;
+  font-size: 50px;
+  letter-spacing: -1px;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+#nav h1::after {
+  content: "©";
+  font-family: gilroy;
+  font-weight: 400;
+  font-size: 25px;
+  position: absolute;
+  top: 12%;
+  right: -10%;
+  color: black;
+}
+#nav h1::before {
+  content: "model management";
+  font-family: gilroy;
+  font-weight: 400;
+  font-size: 15px;
+  position: absolute;
+  bottom: 4%;
+  right: 0%;
+  color: #666;
+  letter-spacing: 0.5px;
+}
+
+#nav h2 {
+  /* background-color: rgb(107, 191, 107); */
+  height: 100%;
+  width: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: black 2px solid;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#nav h2:nth-last-child(1) {
+  width: 10%;
+  /* background-color: aqua; */
+}
+#nav h2:nth-last-child(2) {
+  width: 30%;
+  /* background-color: aqua; */
+}
+
+#center {
+  height: 90%;
+  width: 100%;
+  /* background-color: aquamarine; */
+  padding: 4vw;
+  position: relative;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  /* background-color: brown; */
+  position: relative;
+}
+
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#overlay {
+  height: 55%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* background-color: rgb(240, 139, 77); */
+  padding: 3vw;
+}
+
+#over1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+  /* background-color: rgb(109, 137, 116); */
+  color: white;
+  margin-bottom: 2vh;
+}
+
+#over1 h1 {
+  font-family: monument;
+  font-size: 7vh;
+  /* mix-blend-mode: difference; */
+}
+
+#over1 h2 {
+  /* background-color: blue; */
+  padding: 2.5vw 2.5vw;
+  font-size: 2vw;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+
+#over2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid white;
+  color: white;
+  padding: 1.5vw 0vw;
+}
+
+#over2 h4 {
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+
+#over2 img {
+  height: 7vw;
+}
+
+#scroll {
+  height: 50vh;
+  width: 100%;
+  /* background-color: red; */
+  padding: 1vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(78, 34, 199); */
+  display: inline-block;
+  padding: 2vw;
+  animation-name: anime;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#scroll img {
+  /* display: none;  */
+  height: 85%;
+  width: 15%;
+  margin: 1vw;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 30% 30%;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#alphabet {
+  height: 9vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7vw;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+#alphabet h5 {
+  padding-left: 1vw;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 4px;
+  border-bottom: 2px solid #000;
+}
+#alphabet h6 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 4px;
+  /* background-color: yellow; */
+  padding: 0.4vw 0.8vw;
+  border-radius: 50%;
+  border: 1px solid #00000000;
+  cursor: pointer;
+  margin-right: 1vw;
+  transition: all ease 0.2s;
+}
+
+#alphabet h6:hover {
+  border: 1px solid #000;
+}
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vw;
+}
+#pp1 {
+  height: 100%;
+  width: 50%;
+  background-image: url(https://img.freepik.com/free-photo/attractive-girl-by-window_144627-8000.jpg);
+  background-size: cover;
+  background-position: top;
+  border-radius: 5%;
+}
+#pp2 {
+  height: 100%;
+  width: 45%;
+}
+#pp2 img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+  object-position: 0% 22%;
+}
+
+#pp2 p {
+  padding: 2vw 2vw;
+  font-size: 2.5vw;
+}
+
+#page3 {
+  height: 90%;
+  width: 100%;
+  padding: 5vw 4vw;
+  position: relative;
+}
+
+#page3 > h1 {
+  text-align: center;
+  font-family: monument;
+  font-size: 2.5vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 5vh;
+}
+
+.alem {
+  height: 15vh;
+  width: 100%;
+  border-top: 2px solid #000;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: relative;
+  transition: all ease 0.7s;
+}
+
+.alem img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 50%;
+  left: 15%;
+  opacity: 0;
+  transition: all 0.7s;
+  object-fit: cover;
+  object-position: top;
+}
+.alem h4 {
+  width: 7%;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.alem .alemp2 {
+  width: 45%;
+}
+
+.alem .alemp2 h1 {
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.alem .alemp2 h5 {
+  font-size: 1vw;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.alem:nth-last-child(1) {
+  border-bottom: 2px solid #000;
+}
+
+.alem:nth-last-child(1) img {
+  left: 45%;
+}
+.alem:nth-last-child(3) img {
+  left: 45%;
+}
+.alem:hover img {
+  opacity: 1;
+  left: 30%;
+}
+
+.alem:hover {
+  background-color: aliceblue;
+}
+
+#page4 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vw;
+}
+#page4 > #pp1 {
+  height: 100%;
+  width: 50%;
+  background-image: url(https://i.pinimg.com/originals/dc/f7/de/dcf7deba7cf72c8d76a37ab7fcad47c4.jpg);
+  background-size: cover;
+  background-position: top;
+  border-radius: 5%;
+}
+
+#mark {
+  width: 100%;
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0.8vw;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+}
+
+#mark h1 {
+  display: inline-block;
+  font-size: 7vh;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  font-family: monument;
+  /* background-color: blue; */
+  margin-right: 16px;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  from {
+    transform: translatex(0);
+  }
+  to {
+    transform: translatex(calc(-100% - 20px));
+  }
+}
+
+#footer {
+  width: 100%;
+  height: fit-content;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh 1vh;
+}
+
+#footer h1 {
+  font-size: 8vh;
+  padding: 3vh 1vh;
+  font-family: monument;
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #nav h2 {
+    display: none;
+  }
+
+  #nav {
+    height: 8vh;
+    padding: 0vw 5vw;
+    margin-top: 20px;
+  }
+
+  #nav h3 {
+    display: block;
+    justify-content: flex-end;
+  }
+
+  #nav h1 {
+    font-size: 30px;
+    width: 40%;
+    justify-content: flex-start;
+  }
+  #nav h1::after {
+    display: none;
+  }
+  #nav h1::before {
+    display: none;
+  }
+
+  #center {
+    height: 70%;
+  }
+
+  #overlay {
+    height: fit-content;
+  }
+
+  #over1 {
+    height: 50%;
+  }
+
+  #over1 h1 {
+    font-size: 5.5vh;
+    font-weight: 100;
+  }
+
+  #over1 h2 {
+    font-size: 5vw;
+  }
+
+  #over2 h4 {
+    font-size: 3.5vw;
+  }
+
+  #scroll {
+    height: 20vh;
+  }
+
+  #scroll img {
+    /* display: none;  */
+    height: 80%;
+    width: 18%;
+  }
+
+  #alphabet {
+    width: fit-content;
+  }
+
+  #alphabet h5 {
+    padding-left: 2vw;
+    font-size: 5vw;
+  }
+  #alphabet h6 {
+    font-size: 5vw;
+  }
+  #page3 > h1 {
+    font-size: 5vw;
+  }
+  .alem h4 {
+    font-size: 5vw;
+  }
+  .alem .alemp2 h1 {
+    font-size: 5vw;
+  }
+
+  .alem .alemp2 h5 {
+    display: none;
+  }
+  #page3 {
+    height: 80%;
+  }
+  #pp2 p {
+    font-size: 3.5vw;
+  }
+  #footer h1 {
+    font-size: 4.5vh;
+    padding: 3vh;
+  }
+}
